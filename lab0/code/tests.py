@@ -84,7 +84,7 @@ def factorial_3_getargs():
 def factorial_3_testanswer(ans, original_val = None):
     if original_val == None:
         original_val = answers['factorial_3_randnum']
-    for i in xrange(1, original_val[0]+1):
+    for i in range(1, original_val[0]+1):
         ans /= float(i)
 
     return in_range(ans, 1, 0.0001)
@@ -249,7 +249,7 @@ def evaluator(lst, context = {}):
     if isinstance(lst, Sum):
         retVal = 0
         for elt in lst:
-            if elt in context.keys():
+            if elt in list(context.keys()):
                 elt = context[elt]
 
             if isinstance(elt, Expression):
@@ -262,7 +262,7 @@ def evaluator(lst, context = {}):
     elif isinstance(lst, Product):        
         retVal = 1
         for elt in lst:
-            if elt in context.keys():
+            if elt in list(context.keys()):
                 elt = context[elt]
 
             if isinstance(elt, Expression):
