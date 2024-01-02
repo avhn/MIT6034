@@ -19,4 +19,9 @@ This course uses Python 2 for labs. I use Python 3.11; **code files converted to
 <!--
 
 ### Quizzes
+- [Quiz 1](./exams/)
+- [Quiz 2](./exams/)
+- [Quiz 3](./exams/)
+- [Quiz 4](./exams/)
+- [Final exam](./exams/)
 -->
